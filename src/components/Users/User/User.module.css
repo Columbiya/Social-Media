@@ -1,0 +1,57 @@
+.picture {
+    width: 100px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 14fr;
+    grid-gap: 15px;
+}
+
+.followButton {
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+
+    position: relative;
+
+    background-color: #088ffd;
+    border-radius: 10px;
+    border: 2px solid black;
+  
+    color: lightgreen;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+  
+    transition: color .3s ease,
+                background-color .3s ease;
+}
+
+.followButton::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #34aa05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    transform: translate(-110%);
+    
+    transition: transform .3s ease;
+}
+
+.followButton:hover:before {
+    transform: translate(0);
+}
+
+.followButton:hover {
+    background-color: transparent;
+}
+
+.followButton:hover {
+    color: #fff;
+}

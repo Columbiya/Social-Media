@@ -1,0 +1,23 @@
+.item {
+    display: grid;
+    grid-template-columns: 1.3fr 10fr;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.image {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.text {
+    margin-left: 30px;
+}
+
+.likes {
+    color: red;
+    text-decoration: none;
+
+    position: relative;
+}

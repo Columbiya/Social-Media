@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+
+  background-color: #e9e8e8;
+}
+
+ul, ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+
+  margin-top: 15px;
+}
+
+.app-wrapper-content {
+  width: 85%;
+}
+
+.global-error {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border: 2px solid #088ffd;
+  background-color: #fff;
+  font-size: 20px;
+  color: red;
+  width: 30%;
+  padding: 15px;
+  z-index: 999999;
+  opacity: 0;
+  animation: fadeInAndOut 3s 1;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .app-wrapper-content  {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app-wrapper-content {
+    padding: 15px;
+  }
+}

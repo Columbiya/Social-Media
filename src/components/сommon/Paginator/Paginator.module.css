@@ -1,0 +1,58 @@
+.pageItem {
+    cursor: pointer;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.sandwichPanel {
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 0 90px;
+
+    position: relative;
+}
+
+.pageItem:not(:last-child) {
+    margin-right: 10px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.arrowButton {
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    background-color: #088ffd;
+    color: lightgreen;
+}
+
+.arrowLeft {
+    margin-right: 10px;
+
+    left: 0;
+}
+
+.arrowRight {
+    right: 0;
+}
+
+.filled {
+    background-color: #e44d3a;
+    color: #fff;
+
+    margin-top: 0;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 576px) {
+    .sandwichPanel {
+        margin: 0 auto 15px;
+    }
+}

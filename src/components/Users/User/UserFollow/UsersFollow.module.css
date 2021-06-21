@@ -1,0 +1,18 @@
+.picture {
+    width: 100px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 14fr;
+    grid-gap: 15px;
+}
+
+.userLeft {
+    text-align: center;
+}
+
+.noMargin {
+    width: 100%;
+    margin: 0;
+}
