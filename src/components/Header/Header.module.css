@@ -1,0 +1,117 @@
+.header {
+  background-color: #e44d3a;
+  height: 60px;
+
+  padding: 0 15px;
+}
+
+.headerContainer {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-logo {
+    width: 34px;
+    height: 34px;
+
+    cursor: pointer;
+}
+
+.nav {
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.login:hover {
+  color: #e4e016;
+}
+
+.image {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  margin-right: 10px;
+}
+
+.user {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  border-left: 1px solid #dd3e2b;
+  border-right: 1px solid #dd3e2b;
+
+  background-color: #e44d3a;
+
+  padding: 10px 10px;
+
+  cursor: pointer;
+
+  transition: background-color .3s linear;
+}
+
+.userPoppingMenu {
+  width: 200px;
+
+  color: #000;
+  text-align: center;
+
+  position: absolute;
+  right: -1px;
+  top: 100%;
+  z-index: 5;
+
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+
+  box-shadow: 1px 1px 6px -2px rgb(0 0 0 / 24%);
+
+  transition: height .3s ease;
+}
+
+.userPoppingMenu * {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.userPoppingMenu *:last-child {
+  border-top: none;
+}
+
+.bars {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  position: relative;
+  z-index: 10001;
+
+  transition: color .3s linear;
+}
+
+.bars:hover {
+  color: #ffffff94;
+}
+
+@media screen and (max-width: 992px) {
+  .app-logo {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+}

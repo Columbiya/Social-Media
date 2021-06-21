@@ -1,0 +1,153 @@
+.person {
+  margin: 15px 0;
+}
+
+.pictureContainer {
+  width: 150px;
+  height: 150px;
+
+  background-color: #000;
+  position: relative;
+}
+
+.uploadNewPhoto {
+  width: 40px;
+  height: 40px;
+  background-color: #e44d3a;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 75%;
+  left: 10px;
+  transform: translate(-50%, 0);
+  z-index: 999;
+
+  opacity: 0;
+
+  transition: opacity .3s ease-in-out;
+}
+
+.uploadPhotoIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.statusInput {
+  width: 150px;
+  border: 2px solid #e7810c;
+
+  outline: none;
+
+  padding: 5px;
+}
+
+.pictureContainer.hoverable:hover .picture {
+  opacity: 0.8;
+}
+
+
+.pictureContainer:hover .uploadNewPhoto {
+  opacity: 1;
+}
+
+.picture {
+  transition: opacity .3s ease-in-out;
+}
+
+.picture {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  opacity: 0;
+  visibility: none;
+}
+
+.personInfo {
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.contact {
+  padding-left: 15px;
+}
+
+.contactLink {
+  color: #000;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+}
+
+.description {
+  color: #e44d3a;
+}
+
+.editProfile {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  background-color: #088ffd;
+  padding: 15px;
+  border: 2px solid #000;
+  cursor: pointer;
+  justify-self: self-end;
+
+  margin-top: 15px;
+}
+
+.disabled {
+  opacity: 0.6;
+}
+
+.personInfoShow {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  background-color: #e44d3a;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+
+  position: relative; 
+  margin-bottom: 15px;
+  z-index: 5;
+
+  transition: background-color .3s linear;
+}
+
+.personInfoShow:hover {
+  background-color: #b14233;
+}
+
+.personInfoFooter {
+  overflow: hidden;
+
+  transition: height .3s ease;
+}

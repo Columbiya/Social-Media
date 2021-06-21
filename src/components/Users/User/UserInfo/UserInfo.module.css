@@ -1,0 +1,30 @@
+.userInfo {
+    display: grid;
+    grid-template-areas: 'name name city city'
+                         'status status status .';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding: 15px;
+    
+    border: 2px solid #949393;
+    border-radius: 25px;
+}
+
+.location {
+    justify-self: self-end;
+    grid-area: city;
+    grid-column: 3/5;
+
+    text-align: right;
+}
+
+.name {
+    grid-area: name;
+    grid-column: 1/3;
+    font-size: 20px;
+}
+
+.status {
+    grid-area: status;
+    align-self: flex-end;
+}

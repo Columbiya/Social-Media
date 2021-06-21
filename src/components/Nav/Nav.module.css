@@ -1,0 +1,101 @@
+.nav {
+    width: 15%;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.wrapper {
+    background-color: #e44d3a;
+    padding: 10px;
+
+    position: sticky;
+    top: 10px;
+}
+
+.link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    overflow: hidden;
+
+    transition: color .3s ease;
+}
+
+.link:hover {
+    color: #dbdf13;
+}
+
+.active {
+    color: #dbdf13;
+}
+
+.icon {
+    font-size: 13px;
+
+    margin-right: 5px;
+}
+
+.friendsBlock {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.friendsTitle {
+    font-weight: 400;
+}
+
+.friends {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .friends {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        font-size: 20px;
+
+        transform: translate(-105%, 0);
+
+        transition: transform .4s ease;
+    }
+
+    .nav.active {
+        transform: translate(0, 0);
+    }
+
+    .wrapper {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav {
+        font-size: 15px;
+    }
+}

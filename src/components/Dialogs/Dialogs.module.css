@@ -1,0 +1,132 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+
+    padding: 20px;
+
+    font-size: 25px;
+}
+
+.dialog {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: black;
+
+    transition: background-color ease .3s;
+}
+
+.dialog:hover {
+    background-color: #ccc;
+}
+
+.dialog:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.dialog.active {
+    color: #e44d3a;
+}
+
+
+.dialogsItems {
+    padding: 0 20px 0 0;
+    border-right: 2px solid #e44d3a;
+}
+
+.dialogPicture {
+    width: 100px;
+    border-radius: 50%;
+
+    margin-right: 30px;
+}
+
+.sticky {
+    position: sticky;
+    top: 2em;
+}
+
+.wrapper {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.message {
+    display: grid;
+    grid-template-areas: 'p c';
+    grid-template-columns: 2fr 14fr;
+    grid-gap: 10px 20px; 
+    align-items: center;
+
+    padding: 10px;
+}
+
+.message:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.picture {
+    grid-area: p;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.text {
+    max-width: 300px;
+    grid-area: c;
+}
+
+.textRight {
+    justify-self: flex-end;
+    text-align: right;
+}
+
+.message.right {
+    grid-template-areas: 'c p';
+    grid-template-columns: 14fr 2fr;
+}
+
+.typeMessage {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.comment:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .dialogs {
+        grid-template-columns: 1fr;
+    }
+
+    .dialog {
+        padding: 30px 0;
+    }
+
+    .dialogsItems {
+        padding: 0;
+        border-right: none;
+
+        margin-bottom: 15px;
+    }
+} 
