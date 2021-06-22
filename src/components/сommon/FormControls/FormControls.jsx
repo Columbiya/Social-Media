@@ -16,7 +16,7 @@ export const createFormElement = Element => ({ input, meta: { touched, error }, 
 export const createField = (placeholder, text, name, component, validators, props = {}) => {
     return (
         <>
-            <Field placeholder={placeholder} name={name} component={component} validate={composeValidators(...validators)} {...props} />
+            <Field placeholder={placeholder} name={name} component={component} validate={composeValidators(...validators)} type={props.type} {...props} />
             {text}
         </>
     );

@@ -9,7 +9,7 @@ import { Redirect } from 'react-router';
 import { getCaptcha, getIsAuthorized } from '../../redux/selectors/auth-selectors';
 import cn from 'classnames';
 
-const maxLength10 = maxLengthCreator(30);
+const maxLength30 = maxLengthCreator(30);
 const Input = createFormElement("input");
 
 const Login = ({ isAuthorized, login, captchaUrl }) => {
@@ -34,9 +34,9 @@ const LoginForm = ({ login, captchaUrl }) => {
             {({ submitError, submitting, handleSubmit }) => (
                 <form onSubmit={handleSubmit} className={classes.form}>
                     <h1 className={classes.loginTitle}>Авторизация</h1>
-                    {createField('put your login here..', null, 'email', Input, [requiredField, maxLength10], 'form_login', { type: 'text' })}
-                    {createField('put your password here..', null, 'password', Input, [requiredField, maxLength10], 'form_login', { type: 'password' })}
-                    {createField(null, 'Remember me', 'rememberMe', Input, [], 'form_login', { type: 'checkbox' })}
+                    {createField('put your login here..', null, 'email', Input, [requiredField, maxLength30], { type: 'text' })}
+                    {createField('put your password here..', null, 'password', Input, [requiredField, maxLength30], { type: 'password' })}
+                    {createField(null, 'Remember me', 'rememberMe', Input, [], { type: 'checkbox' })}
                     {captchaUrl &&
                         <>
                             <img src={captchaUrl} alt="captcha" />

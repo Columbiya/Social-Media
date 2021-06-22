@@ -31,7 +31,7 @@ const MyPostsForm = props => {
 
     const onSubmitReset = async (event, handleSubmit, form) => {
         handleSubmit(event);
-        form.restart();
+        form.reset();
     };
 
     return (

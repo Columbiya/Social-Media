@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
+import { HashRouter, Redirect, Switch } from 'react-router-dom';
 import store from './redux/redux-store';
 import { connect } from 'react-redux';
 import { initializeApp, setGlobalError } from './redux/app-reducer';
@@ -87,13 +87,13 @@ const AppContainer = connect(mapDispatchToProps, { initializeApp, setGlobalError
 
 const FacetookApp = props => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Provider store={store}>
                 <React.StrictMode>
                     <AppContainer />
                 </React.StrictMode>
             </Provider>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 

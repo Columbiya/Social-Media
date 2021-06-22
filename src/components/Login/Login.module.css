@@ -21,16 +21,14 @@
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
-.form div input {
-    margin-top: 15px;
-}
-
 .disabled {
     opacity: 0.5;
 }
 
 .loginTitle {
     text-align: center;
+
+    margin-bottom: 15px;
 }
 
 .error {

@@ -2,12 +2,16 @@
     position: relative;
 }
 
+.container:not(:last-child) {
+    margin-bottom: 15px;
+}
+
 .errorText {
     color: red;
     font-size: 15px;
 
     position: absolute;
-    right: 15px;
+    right: 5px;
     top: 50%;
     transform: translate(0, -50%);
 }
